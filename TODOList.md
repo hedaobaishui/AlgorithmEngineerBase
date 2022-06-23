@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: 
  * @Date: 2022-04-19 10:04:43
- * @LastEditTime: 2022-06-23 16:13:18
+ * @LastEditTime: 2022-06-23 16:16:53
  * @LastEditors: taisanai
 -->
 # 前言
@@ -119,3 +119,5 @@ SLAM
  - [ ] 提高编程能力的书籍　视频
  - [ ] 提高管理能力　语言能力　逻辑思维能力　专注力　记忆力　幸福感　获得感　去除空虚感的方法
  - [ ] .pyx
+ - [ ] git 学习[链接](https://zhuanlan.zhihu.com/p/276376558)
+ - [ ] docker 学习
