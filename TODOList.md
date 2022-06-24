@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: 
  * @Date: 2022-04-19 10:04:43
- * @LastEditTime: 2022-06-24 09:42:40
+ * @LastEditTime: 2022-06-24 11:14:54
  * @LastEditors: taisanai
 -->
 # 前言
@@ -17,6 +17,7 @@ leetcode
 6D姿态估计
 SLAM
 １、总是什么都想做　然后什么都没做好
+
  - [x] 身体　健康的作息 
  - [x] 小样本检测
  - [ ] 3、AUTO ML YOLOV4 & V5 
@@ -105,8 +106,9 @@ SLAM
  - [ ] 视频帧间的目标跟踪YCB数据集　meanshift算法
  - [ ] 奇异值分解求解RT [链接](https://blog.csdn.net/dfdfdsfdfdfdf/article/details/53213240)
  - [ ] 人脸识别　人脸检测　眨眼检测　活体检测　门禁的人脸识别系统[产考链接](https://zhuanlan.zhihu.com/p/105810423)
- - [ ] KDtree
- - [ ] open3d
+ - [ ] asd
+ - [ ] KDtreesss
+ - [ ] open3d asd
  - [ ] 长尾效应
  - [ ] 知识蒸馏　迁移学习　教师网络->学生网络　模型压缩
  - [ ] MTCNN 人脸检测
@@ -123,3 +125,8 @@ SLAM
  - [ ] docker 学习
  - [ ] YUV RGB
  - [ ] 打通　从图像采集到结果输出的全流程　最好能加UI
+ - [ ] 多机编程　使用多块GPU 训练模型
+ - [ ] 图像增强
+ - [ ] zero-shot、few-shot
+ - [ ] 轻量模型![链接](https://pic2.zhimg.com/80/v2-10be1a8b90afd986207db285fb9eeae9_720w.jpg)
+ - [ ] 模型计算量[链接](https://blog.csdn.net/weixin_39833897/article/details/105807172)
