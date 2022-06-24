@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: 
  * @Date: 2022-04-19 10:04:43
- * @LastEditTime: 2022-06-23 16:16:53
+ * @LastEditTime: 2022-06-24 09:42:40
  * @LastEditors: taisanai
 -->
 # 前言
@@ -121,3 +121,5 @@ SLAM
  - [ ] .pyx
  - [ ] git 学习[链接](https://zhuanlan.zhihu.com/p/276376558)
  - [ ] docker 学习
+ - [ ] YUV RGB
+ - [ ] 打通　从图像采集到结果输出的全流程　最好能加UI
