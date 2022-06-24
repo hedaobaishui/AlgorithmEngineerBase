@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: 
  * @Date: 2022-04-19 10:04:43
- * @LastEditTime: 2022-06-24 11:14:54
+ * @LastEditTime: 2022-06-24 13:46:03
  * @LastEditors: taisanai
 -->
 # 前言
@@ -16,6 +16,9 @@ leetcode
 leetcode
 6D姿态估计
 SLAM
+编程是一门技术活儿　需要多动手
+算法是一门学术活儿　需要多看
+纸上得来终觉浅　得知此事要躬行
 １、总是什么都想做　然后什么都没做好
 
  - [x] 身体　健康的作息 
@@ -59,8 +62,8 @@ SLAM
  - [ ] 33 Transformer
  - [ ] 34 快速判别文献是否能够解决自己的问题
  - [ ] 35 模型性能优化
- - [ ]  36 python 学习
- - [ ]  37 leetcode
+ - [ ] 36 python 学习
+ - [ ] 37 leetcode
  - [ ] 38 transform 在图像检测识别中的应用
  - [ ] 39 yolov5 源码学习
  - [ ] 40 医学检测、OCR检测 学习
@@ -107,8 +110,8 @@ SLAM
  - [ ] 奇异值分解求解RT [链接](https://blog.csdn.net/dfdfdsfdfdfdf/article/details/53213240)
  - [ ] 人脸识别　人脸检测　眨眼检测　活体检测　门禁的人脸识别系统[产考链接](https://zhuanlan.zhihu.com/p/105810423)
  - [ ] asd
- - [ ] KDtreesss
- - [ ] open3d asd
+ - [ ] KDtree
+ - [ ] open3d
  - [ ] 长尾效应
  - [ ] 知识蒸馏　迁移学习　教师网络->学生网络　模型压缩
  - [ ] MTCNN 人脸检测
@@ -130,3 +133,5 @@ SLAM
  - [ ] zero-shot、few-shot
  - [ ] 轻量模型![链接](https://pic2.zhimg.com/80/v2-10be1a8b90afd986207db285fb9eeae9_720w.jpg)
  - [ ] 模型计算量[链接](https://blog.csdn.net/weixin_39833897/article/details/105807172)
+ - [ ] torchshard　模型参数切片
+ - [ ] 模型压缩
