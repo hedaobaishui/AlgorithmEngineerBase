@@ -1,31 +1,4 @@
-<!-- TOC -->
-
-- [0. 基础知识](#0-基础知识)
-  - [0.1 计算量](#01-计算量)
-  - [0.2 参数量](#02-参数量)
-- [１.卷积](#１卷积)
-  - [1.0 dilated convolution\空洞卷积](#10-dilated-convolution空洞卷积)
-  - [1.1 分组卷积](#11-分组卷积)
-  - [1.2　深度可分离卷积](#12深度可分离卷积)
-  - [1.3卷积后的输出](#13卷积后的输出)
-  - [1.4 卷积过程](#14-卷积过程)
-- [2.激活函数](#2激活函数)
-- [3. LOSS 函数](#3-loss-函数)
-- [4. 优化函数](#4-优化函数)
-- [5. 学习率调整](#5-学习率调整)
-- [3.batchNormal](#3batchnormal)
-- [4.参数初始化](#4参数初始化)
-- [5.nn.Sequential](#5nnsequential)
-- [6.nn.Module](#6nnmodule)
-- [7. 逆卷积ConvTranspose2d!](#7-逆卷积convtranspose2d)
-- [7. 逆卷积ConvTranspose2d!](#7-逆卷积convtranspose2d-1)
-- [7. SyncBatchNorm](#7-syncbatchnorm)
-- [8. 卷积计算过程](#8-卷积计算过程)
-- [8. 计算过程](#8-计算过程)
-- [9. 不同的IOU](#9-不同的iou)
-- [10.upsample pixelshuffle](#10upsample-pixelshuffle)
-
-<!-- /TOC -->
+<!-- TOC -->autoauto- [0. 基础知识](#0-基础知识)auto    - [0.1 计算量](#01-计算量)auto    - [0.2 参数量](#02-参数量)auto- [１.卷积](#１卷积)auto    - [1.0 dilated convolution\空洞卷积](#10-dilated-convolution\空洞卷积)auto    - [1.1 分组卷积](#11-分组卷积)auto    - [1.2　深度可分离卷积](#12　深度可分离卷积)auto    - [1.3卷积后的输出](#13卷积后的输出)auto    - [1.4 卷积过程](#14-卷积过程)auto- [2.激活函数](#2激活函数)auto- [3. LOSS 函数](#3-loss-函数)auto- [4. 优化函数](#4-优化函数)auto- [5. 学习率调整](#5-学习率调整)auto- [3.batchNormal](#3batchnormal)auto- [4.参数初始化](#4参数初始化)auto- [5.nn.Sequential](#5nnsequential)auto- [6.nn.Module](#6nnmodule)auto- [7. 逆卷积ConvTranspose2d!](#7-逆卷积convtranspose2d)auto- [7. 逆卷积ConvTranspose2d!](#7-逆卷积convtranspose2d-1)auto- [7. SyncBatchNorm](#7-syncbatchnorm)auto- [8. 卷积计算过程](#8-卷积计算过程)auto- [8. 计算过程](#8-计算过程)auto- [9. 不同的IOU](#9-不同的iou)auto- [10.upsample pixelshuffle](#10upsample-pixelshuffle)autoauto<!-- /TOC -->
 # 0. 基础知识
 ## 0.1 计算量
 参数量：
@@ -145,3 +118,5 @@ $$       \ell_c(x, y) = L_c = \{l_{1,c},\dots,l_{N,c}\}^\top, \quad
 torch.nn.visionlayers
         #改变图像属性　亮度　对比度　饱和度　色调
         self.trancolor = transforms.ColorJitter(0.2, 0.2, 0.2, 0.05)
+
+onehot.scatter_ 用于生成onehot 向量　[链接](https://blog.csdn.net/qq_39004117/article/details/95665418)
