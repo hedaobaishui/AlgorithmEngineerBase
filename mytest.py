@@ -1,3 +1,11 @@
+'''
+Author: hedaobaishui 896585355@qq.com
+Date: 2022-06-22 16:09:44
+LastEditors: hedaobaishui 896585355@qq.com
+LastEditTime: 2022-06-30 13:31:01
+FilePath: /cavaface-master/home/magic/AKApractice/akaNotes/mytest.py
+Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+'''
 """ 
 # @Description: 
 # @Author: 
@@ -5,8 +13,10 @@
 # @LastEditTime: 2022-06-23 16:12:08
 # @LastEditors: taisanai
 """ 
-from matplotlib.font_manager import _Weight
+# from matplotlib.font_manager import _Weight
 import numpy as np
+import torch.nn as nn
+import torch
 def nms(dets,thresh):
     #计算交并比　排序　迭代
     keep = []
@@ -57,7 +67,77 @@ def test():
     ll = [1,2,3,4,5]
     index = np.where(np.array(ll)>3)[0][::]
     print(np.array(ll)[index])
+def testtorchloss():
+    ll = []
+    for i in range(10):
+        tmp = []
+        for j in range(10):
+            if i==j:
+                tmp.append(1)
+            else:
+                tmp.append(0)
+        ll.append(tmp)
+    true = torch.tensor(ll,dtype=torch.float32)
+    pre = torch.randn(10,10)
+    prelogit = torch.softmax(pre,dim=1)
+
+    print("asdsaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
+    print(torch.sum(prelogit,dim=1))
+
+    # print(1-prelogit)
+    # manuloss = (-true*torch.log(prelogit)-(1-true)*(torch.log(1-prelogit))).mean()
+    manuloss = (-true*torch.log(prelogit)).sum()/10
+
+    crossloss_ = nn.CrossEntropyLoss(reduce='mean')
+    crossloss = crossloss_(pre,true)
+    # bcloss_ = nn.BCEWithLogitsLoss(reduce='mean')
+    # bcloss = bcloss_(pre,true)
+    print(true,pre)
+    print(manuloss)
+    print(crossloss)
+    # print(bcloss)
+    for i in range(0,1000,20):
+        logp = torch.tensor(i/100.)
+        p = torch.exp(-logp)
+        # 交叉熵越大　表示越难预测　导致最终的loss越大－
+        loss = (1-p) ** 2 * logp
+        print(logp,loss)
+
+def sum0(f,s,nums,out):
+    mid = (f+s)//2
+    while f<s:
+        mid = (f+s)//2
+        while mid < s and mid > f:
+            if nums[f]+nums[s]+nums[mid]<0:
+                mid = (mid + s) // 2
+                print("<",f,mid,s)
+                if mid == s - 1:
+                    f += 1
+                    break
+            elif nums[f]+nums[s]+nums[mid]>0:
+                mid = (f + mid) // 2 
+                print(">",f,mid,s)
+                if mid == f-1:
+                    s -= 1
+                    break
+            else:
+                out.add((nums[f],nums[mid],nums[s]))
+                print(out)
+                sum0(f+1,s,nums,out)
+                sum0(f,s-1,nums,out)
+    return out
+def threeSum( nums )  :
+    nums.sort()
+    out = set()
+    sum0(0,len(nums)-1,nums,out)
+    return out
+
 if __name__ == "__main__":
     # nms()
-    test()
+    nums = [-1,0,1,2,-1,-4]
+    b = 17754*3 - 4000*6 + 24500 * 3
+    c = [17754*21, 24500*14 +27500*9]
+    a = [17520,113515.52,35000,8000,2500,4103.21,3028.28,17754,17754,10000]
+    print(sum(a))
+    # threeSum(nums)
     # print(test())
