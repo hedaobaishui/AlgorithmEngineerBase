@@ -2,8 +2,8 @@
  * @Description: 
  * @Author: 
  * @Date: 2022-04-19 10:04:43
- * @LastEditTime: 2022-06-24 13:46:03
- * @LastEditors: taisanai
+ * @LastEditTime: 2022-07-04 13:49:35
+ * @LastEditors: hedaobaishui 896585355@qq.com
 -->
 # 前言
 [TODOlist](https://editor.csdn.net/md?articleId=115220117)
@@ -131,7 +131,18 @@ SLAM
  - [ ] 多机编程　使用多块GPU 训练模型
  - [ ] 图像增强
  - [ ] zero-shot、few-shot
- - [ ] 轻量模型![链接](https://pic2.zhimg.com/80/v2-10be1a8b90afd986207db285fb9eeae9_720w.jpg)
+ - [ ] 轻量模型resnet101 top-5error 6![链接](https://pic2.zhimg.com/80/v2-10be1a8b90afd986207db285fb9eeae9_720w.jpg)
  - [ ] 模型计算量[链接](https://blog.csdn.net/weixin_39833897/article/details/105807172)
  - [ ] torchshard　模型参数切片
  - [ ] 模型压缩
+ - [ ] transfer learning 迁移学习
+ - [ ] 基础知识 and 面经
+ - [ ] 量化投资
+ - [ ] 矩阵计算过程　内存问题 im2col
+ - [ ] 稀疏矩阵
+ - [ ] 奇异值分解
+ - [ ] 矩阵的　axis 和　dim
+ - [ ] 查看模型存储
+ - [ ] python collections
+ - [ ] super 顺序的影响
+ - [ ] python 高级编程

@@ -1,13 +1,26 @@
+<!--
+ * @Author: hedaobaishui 896585355@qq.com
+ * @Date: 2022-04-08 15:36:13
+ * @LastEditors: hedaobaishui 896585355@qq.com
+ * @LastEditTime: 2022-07-04 10:52:00
+ * @FilePath: /cavaface-master/home/magic/AKApractice/akaNotes/DL/5Python学习笔记.md
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 <!-- TOC -->
 
-- [1 _ __ __xx__ 比较：](#1-_-__-xx-比较)
-  - [1.1 笔记位置url](#11-笔记位置url)
-- [添加参数](#添加参数)
-- [1 argparse包](#1-argparse包)
+- [1. _ __ __xx__ 比较：](#1-_-__-xx-比较)
+  - [1.1. 笔记位置url](#11-笔记位置url)
+- [2. 添加参数](#2-添加参数)
+- [3. argparse包](#3-argparse包)
+- [4.python 魔法函数](#4python-魔法函数)
+  - [__dict__()](#dict)
+- [4. logg](#4-logg)
+- [5.numpy](#5numpy)
 
 <!-- /TOC -->
-# 1 _ __ __xx__ 比较：
-## 1.1 [笔记位置url](https://www.cnblogs.com/kongk/p/8643691.html)
+
+# 1. _ __ __xx__ 比较：
+## 1.1. [笔记位置url](https://www.cnblogs.com/kongk/p/8643691.html)
 * _xx 单下划线开头
   
   Python中没有真正的私有属性或方法,可以在你想声明为私有的方法和属性前加上单下划线,以提示该属性和方法不应在外部调用.如果真的调用了也不会出错,但不符合规范.
@@ -27,10 +40,10 @@
   clangs("C语言中文网","http://c.biancheng.net")
   ```
 
-# 添加参数
+# 2. 添加参数
 
 
-# 1 argparse包
+# 3. argparse包
 [参考文档](https://docs.python.org/zh-cn/3/library/argparse.html#the-add-argument-method)
 
 
@@ -82,6 +95,10 @@ Namespace(bar='d', foo='d')
 ``choices=``:[候选列表]、eg:['apple','banana','pear','peach']
 
 
+# 4.python 魔法函数
+## __dict__()
+该属性可以用类名或者类的实例对象来调用，用类名直接调用 __dict__，会输出该由类中所有类属性组成的字典；而使用类的实例对象调用 __dict__，会输出由类中所有实例属性组成的字典。
 
-
-# 2.logg
+# 4. logg
+# 5.numpy
+numpy.interp() 一维线性插值
