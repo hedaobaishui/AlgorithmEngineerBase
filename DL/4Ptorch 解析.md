@@ -16,6 +16,7 @@
 - [4. LOSS 函数](#4-loss-函数)
 - [5. 优化函数](#5-优化函数)
 - [6. 学习率调整](#6-学习率调整)
+- [7. 权重初始化方法](#7-权重初始化方法)
 - [7. batchNormal](#7-batchnormal)
 - [8. 参数初始化](#8-参数初始化)
 - [9. nn.Sequential](#9-nnsequential)
@@ -30,6 +31,8 @@
 - [17. upsample pixelshuffle](#17-upsample-pixelshuffle)
 - [18. 常见函数](#18-常见函数)
   - [torch.topk](#torchtopk)
+  - [torch.flatten(x,1)](#torchflattenx1)
+- [19 LOSS](#19-loss)
 
 <!-- /TOC -->
 # 1. 基础知识
@@ -114,7 +117,9 @@ nn.AdaptiveAvgPool2d　和nn.AvgPool2d() 模块
 
 # 3. 激活函数
 self.relu = nn.ReLU(inplace=True) inplace 是够在原对象基础上进行修改
+[参考网址](https://blog.csdn.net/jsk_learner/article/details/102822001)
 # 4. LOSS 函数
+[参考网址](https://pytorch.org/docs/stable/nn.html#loss-functions)
 * the input :math:`x` and target :math:`y`.
 * L1 LOSS
 CrossEntropyLoss
@@ -155,16 +160,22 @@ $$       \ell_c(x, y) = L_c = \{l_{1,c},\dots,l_{N,c}\}^\top, \quad
         + (1 - y_{n,c}) \cdot \log (1 - \sigma(x_{n,c})) \right]
         $$
 # 5. 优化函数
-
+[官方教程](https://pytorch.org/docs/stable/optim.html)
+[AdaGrad RMSProp](https://zhuanlan.zhihu.com/p/34230849)
 # 6. 学习率调整
+[官方教程](https://pytorch.org/docs/stable/optim.html)
+# 7. 权重初始化方法
+"fan_in" "fan_out" 表示的是该节点的输入向的权重还是输出向的权重．一般都是"fan_out"
 
+[官方教程](https://pytorch.org/docs/stable/nn.init.html)
 # 7. batchNormal
     nn.BatchNorm2d(num_features) num_featurs:输入数据的通道数量，在几个维度上计算
     解决了协方差漂移问题　２简单的正则化
     在卷积神经网络的卷积层之后总会添加BatchNorm2d进行数据的归一化处理，这使得数据在进行Relu之前不会因为数据过大而导致网络性能的不稳定，BatchNorm2d()函数数学原理如下：
-    [其他的归一化方式](https://www.jianshu.com/p/913e4c08a638)
-    BN：批量归一化，往batch方向做归一化，归一化维度是[N，H，W]
-    
+[其他的归一化方式](https://www.jianshu.com/p/913e4c08a638)
+
+BN：批量归一化，往batch方向做归一化，归一化维度是[N，H，W]
+[参考网址](https://zhuanlan.zhihu.com/p/93643523)
 
 LN：层次归一化，往channel方向做归一化，归一化维度为[C，H，W]
 
@@ -202,3 +213,45 @@ onehot.scatter_ 用于生成onehot 向量　[链接](https://blog.csdn.net/qq_39
 # 18. 常见函数
 ## torch.topk
    取一个tensor的topk元素（降序后的前k个大小的元素值及索引）dim=0表示按照列求 topn dim=1表示按照行求 topn 默认情况下，dim=1
+## torch.flatten(x,1)
+1）flatten(x,1)是按照x的第1个维度拼接（按照列来拼接，横向拼接）；
+2）flatten(x,0)是按照x的第0个维度拼接（按照行来拼接，纵向拼接）；
+3) 3 不变
+```
+    kk = torch.tensor([[[1,2,3,4],[5,6,7,8],[9,10,11,12]],[[13,14,15,16],[17,18,19,20],[21,22,23,24]]])
+    print(kk)
+    p = torch.flatten(kk,0)
+    print(p)
+    print(p.shape)
+    p = torch.flatten(kk,1)
+    print(p)
+    print(p.shape)
+    p = torch.flatten(kk,2)
+    print(p)
+    print(p.shape)
+```
+```
+tensor([[[ 1,  2,  3,  4],
+         [ 5,  6,  7,  8],
+         [ 9, 10, 11, 12]],
+
+        [[13, 14, 15, 16],
+         [17, 18, 19, 20],
+         [21, 22, 23, 24]]])
+tensor([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17, 18,
+        19, 20, 21, 22, 23, 24])
+torch.Size([24])
+tensor([[ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12],
+        [13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]])
+torch.Size([2, 12])
+tensor([[[ 1,  2,  3,  4],
+         [ 5,  6,  7,  8],
+         [ 9, 10, 11, 12]],
+
+        [[13, 14, 15, 16],
+         [17, 18, 19, 20],
+         [21, 22, 23, 24]]])
+torch.Size([2, 3, 4])
+```
+# 19 LOSS
+focal loss 降低类不均衡问题的影响　增加难区分类的损失权重

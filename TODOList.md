@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: 
  * @Date: 2022-04-19 10:04:43
- * @LastEditTime: 2022-07-04 13:49:35
+ * @LastEditTime: 2022-07-08 11:08:19
  * @LastEditors: hedaobaishui 896585355@qq.com
 -->
 # 前言
@@ -20,6 +20,7 @@ SLAM
 算法是一门学术活儿　需要多看
 纸上得来终觉浅　得知此事要躬行
 １、总是什么都想做　然后什么都没做好
+２．尽人事听天命
 
  - [x] 身体　健康的作息 
  - [x] 小样本检测
@@ -132,6 +133,7 @@ SLAM
  - [ ] 图像增强
  - [ ] zero-shot、few-shot
  - [ ] 轻量模型resnet101 top-5error 6![链接](https://pic2.zhimg.com/80/v2-10be1a8b90afd986207db285fb9eeae9_720w.jpg)
+  ![对比](0picture/resnet.jpg)
  - [ ] 模型计算量[链接](https://blog.csdn.net/weixin_39833897/article/details/105807172)
  - [ ] torchshard　模型参数切片
  - [ ] 模型压缩
@@ -146,3 +148,4 @@ SLAM
  - [ ] python collections
  - [ ] super 顺序的影响
  - [ ] python 高级编程
+ - [ ] 阅读mobilenetv3的论文　Searching for MobileNetV3

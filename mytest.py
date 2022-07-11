@@ -2,7 +2,7 @@
 Author: hedaobaishui 896585355@qq.com
 Date: 2022-06-22 16:09:44
 LastEditors: hedaobaishui 896585355@qq.com
-LastEditTime: 2022-07-04 13:49:23
+LastEditTime: 2022-07-11 10:59:01
 FilePath: /cavaface-master/home/magic/AKApractice/akaNotes/mytest.py
 Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 '''
@@ -132,13 +132,20 @@ def threeSum( nums )  :
     sum0(0,len(nums)-1,nums,out)
     return out
 
+def testsequential(x):
+    seq = nn.Sequential()
+    x1 = seq(x)
+    print(x1-x)
 if __name__ == "__main__":
-    # nms()
-    nums = [-1,0,1,2,-1,-4]
-    b = 17754*3 - 4000*6 + 24500 * 3
-    c = [17754*21, 24500*14 +27500*9]
-    a = [17520,113515.52,35000,8000,2500,4103.21,3028.28,17754,17754*2,10000]
-    print(type(a))
-    print(type(a).__name__)
-    # threeSum(nums)
-    # print(test())
+    # # nms()
+    # nums = [-1,0,1,2,-1,-4]
+    # b = 17754*3 - 4000*6 + 24500 * 3
+    # c = [17754*21, 24500*14 +27500*9]
+    # a = [17520,113515.52,35000,8000,2500,4103.21,3028.28,17754,17754*2,10000]
+    # print(type(a))
+    # print(type(a).__name__)
+    # # threeSum(nums)
+    # # print(test())
+    xx = torch.randn((3,3,224,224))
+    print(xx)
+    testsequential(xx)
