@@ -2,7 +2,7 @@
 Author: hedaobaishui 896585355@qq.com
 Date: 2022-06-22 16:09:44
 LastEditors: hedaobaishui 896585355@qq.com
-LastEditTime: 2022-07-11 10:59:01
+LastEditTime: 2022-08-25 15:50:58
 FilePath: /cavaface-master/home/magic/AKApractice/akaNotes/mytest.py
 Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 '''
@@ -15,8 +15,8 @@ Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查�
 """ 
 # from matplotlib.font_manager import _Weight
 import numpy as np
-import torch.nn as nn
-import torch
+# import torch.nn as nn
+# import torch
 def nms(dets,thresh):
     #计算交并比　排序　迭代
     keep = []
@@ -84,6 +84,7 @@ def testtorchloss():
     print("asdsaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
     print(torch.sum(prelogit,dim=1))
 
+
     # print(1-prelogit)
     # manuloss = (-true*torch.log(prelogit)-(1-true)*(torch.log(1-prelogit))).mean()
     manuloss = (-true*torch.log(prelogit)).sum()/10
@@ -146,6 +147,11 @@ if __name__ == "__main__":
     # print(type(a).__name__)
     # # threeSum(nums)
     # # print(test())
-    xx = torch.randn((3,3,224,224))
-    print(xx)
-    testsequential(xx)
+    # xx = torch.randn((3,3,224,224))
+    # print(xx)
+    # testsequential(xx)
+    print(80.13*10000/14/18463/2)
+    print(9.14/14.12)
+    print(6.2/25*60)
+    print(6.2/25*60)
+    

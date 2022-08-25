@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: 
  * @Date: 2022-04-19 10:04:43
- * @LastEditTime: 2022-07-08 11:08:19
+ * @LastEditTime: 2022-08-25 15:27:05
  * @LastEditors: hedaobaishui 896585355@qq.com
 -->
 # 前言
@@ -19,8 +19,13 @@ SLAM
 编程是一门技术活儿　需要多动手
 算法是一门学术活儿　需要多看
 纸上得来终觉浅　得知此事要躬行
+身体是革命的本钱，合理健身\合理排解
 １、总是什么都想做　然后什么都没做好
 ２．尽人事听天命
+３. 好的坏的我都接受
+４. 沉住气
+
+
 
  - [x] 身体　健康的作息 
  - [x] 小样本检测
@@ -148,4 +153,14 @@ SLAM
  - [ ] python collections
  - [ ] super 顺序的影响
  - [ ] python 高级编程
- - [ ] 阅读mobilenetv3的论文　Searching for MobileNetV3
+ - [ ] C-GHOSTNETS (https://arxiv.org/pdf/2201.03297.pdf)
+ - [ ] 网络可视化工具netron
+ - [ ] 网络
+ - [ ] C++ 
+ - [ ] shell
+ - [ ] 操作系统
+ - [ ] NAS
+ - [ ] 模型的计算量
+ - [ ] 视频中目标跟踪
+ - [ ] 流媒体处理
+ - [ ] gstreamer
