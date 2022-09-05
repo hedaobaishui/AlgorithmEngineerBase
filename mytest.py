@@ -2,7 +2,7 @@
 Author: hedaobaishui 896585355@qq.com
 Date: 2022-06-22 16:09:44
 LastEditors: hedaobaishui 896585355@qq.com
-LastEditTime: 2022-08-25 15:50:58
+LastEditTime: 2022-08-29 16:06:20
 FilePath: /cavaface-master/home/magic/AKApractice/akaNotes/mytest.py
 Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 '''
@@ -154,4 +154,14 @@ if __name__ == "__main__":
     print(9.14/14.12)
     print(6.2/25*60)
     print(6.2/25*60)
+    b = 2.5 + 0.7 + 2.5 + 1
+    l = 6 + 5
+    d = 5 + 5
+    print((b+d+l)*20+(b+l+d+9+10)*10)
+    print(85/2/1.5/6)
+    print(21/2/1.5/6)
+    print(30/2/1.5/6)
+    print(55/2/1.5/6)
+    print(15*7/3*2*7)
+    print(15*7*7)
     
