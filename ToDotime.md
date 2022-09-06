@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: 
  * @Date: 2022-06-09 10:47:59
- * @LastEditTime: 2022-09-02 12:03:13
+ * @LastEditTime: 2022-09-06 09:33:57
  * @LastEditors: hedaobaishui 896585355@qq.com
 -->
 <!-- TOC -->
@@ -49,7 +49,7 @@
 * 6.27 
 * 1.下午实现 resnet 和 
 * 2.实现一个简单的分类任务
-6.28 XXXXXXXXXXXXXXXX
+.28 XXXXXXXXXXXXXXXX
 6.29 
 实现一个resnet,实现一个简单的分类器：
 * 
@@ -99,4 +99,9 @@ DL/4/４激活函数
 9.2
 - [ ] 目标检测　https://blog.csdn.net/qq_36561737/article/details/115711354
 - [ ] 模型压缩　
+- [ ] 目标跟踪 
+  
+9.6 
+- [ ]　优化方法
+- [ ] 学习率更新方式
 - [ ] 目标跟踪

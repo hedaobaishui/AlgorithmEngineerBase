@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: 
  * @Date: 2022-04-19 10:04:43
- * @LastEditTime: 2022-09-05 10:43:31
+ * @LastEditTime: 2022-09-06 09:36:53
  * @LastEditors: hedaobaishui 896585355@qq.com
 -->
 <!-- TOC -->
@@ -188,7 +188,7 @@ xmind 只是起到一个大纲的作用
  - [ ] 
  - [ ] gstreamer
  - [ ] 
- - [ ] 李宏毅的课程每天要看3个小时才能在一个月时间内看完P21
+ - [ ] 李宏毅的课程每天要看3个小时才能在一个月时间内看完P26优化函数
  - [ ] 模型部署 前端界面？端口映射：1.设置路由器 2.买端口映射的软件 前端软件jqurry javascript flask 库开启服务
  - [ ] flask 简易的web开发 视频处理  RTSP
  - [ ] 模型压缩 https://search.bilibili.com/all?keyword=%E6%A8%A1%E5%9E%8B%E5%8E%8B%E7%BC%A9&from_source=webtop_search&spm_id_from=333.788
