@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: 
  * @Date: 2022-04-19 10:04:43
- * @LastEditTime: 2022-09-06 09:36:53
+ * @LastEditTime: 2022-09-06 14:04:10
  * @LastEditors: hedaobaishui 896585355@qq.com
 -->
 <!-- TOC -->
@@ -181,14 +181,18 @@ xmind 只是起到一个大纲的作用
  - [ ] 单张人脸识别　门禁系统
  - [ ] docker
  - [ ] 要读一下yolov5的源码 很多trick　cuda编程的技巧
+ - [ ] 多目标　tracking https://www.cnblogs.com/wj-1314/p/11556107.html#:~:text=Siamese%20Network%20%E6%98%AF%E4%B8%80%E7%A7%8D%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E6%9E%B6%E6%9E%84%EF%BC%8C%E8%80%8C%E4%B8%8D%E6%98%AF%E5%85%B7%E4%BD%93%E7%9A%84%E6%9F%90%E7%A7%8D%E7%BD%91%E7%BB%9C%EF%BC%8C%E5%B0%B1%E5%83%8FSeq2Seq%E4%B8%80%E6%A0%B7%EF%BC%8C%E5%85%B7%E4%BD%93%E5%AE%9E%E7%8E%B0%E4%B8%8A%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8RNN%E4%B9%9F%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8CNN%E3%80%82,Siamese%20Network%20%E5%B0%B1%E5%83%8F%E2%80%9C%E8%BF%9E%E4%BD%93%E7%9A%84%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E2%80%9D%EF%BC%8C%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E2%80%9C%E8%BF%9E%E4%BD%93%E2%80%9D%E6%98%AF%E9%80%9A%E8%BF%87%E5%85%B1%E4%BA%AB%E6%9D%83%E5%80%BC%E6%9D%A5%E5%AE%9E%E7%8E%B0%E7%9A%84%EF%BC%88%E5%85%B1%E4%BA%AB%E6%9D%83%E5%80%BC%E5%8D%B3%E5%B7%A6%E5%8F%B3%E4%B8%A4%E4%B8%AA%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E6%9D%83%E9%87%8D%E4%B8%80%E6%A8%A1%E4%B8%80%E6%A0%B7%EF%BC%89
 # Other
+* p32
+
+
  - [ ] 经济学基础
  - [ ] 投资分析
  - [ ] 政治经济学
  - [ ] 
  - [ ] gstreamer
  - [ ] 
- - [ ] 李宏毅的课程每天要看3个小时才能在一个月时间内看完P26优化函数
+ - [ ] 李宏毅的课程每天要看3个小时才能在一个月时间内看完优化函数
  - [ ] 模型部署 前端界面？端口映射：1.设置路由器 2.买端口映射的软件 前端软件jqurry javascript flask 库开启服务
  - [ ] flask 简易的web开发 视频处理  RTSP
  - [ ] 模型压缩 https://search.bilibili.com/all?keyword=%E6%A8%A1%E5%9E%8B%E5%8E%8B%E7%BC%A9&from_source=webtop_search&spm_id_from=333.788
